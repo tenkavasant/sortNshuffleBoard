@@ -1,4 +1,6 @@
 var mainObj = (main = () => {
+    let myName ='Tenka Vasant';
+    document.getElementById('myName').innerHTML = myName;
     const list = [{ value: 1, className: 'bgcolor1' }, { value: 2, className: 'bgcolor2' },
     { value: 3, className: 'bgcolor3' }, { value: 4, className: 'bgcolor2' },
     { value: 5, className: 'bgcolor3' }, { value: 6, className: 'bgcolor4' },
@@ -37,6 +39,7 @@ var mainObj = (main = () => {
     }
 })();
 
-window.onload = () => {
+window.onload = () => {    
     mainObj.doSort();
+
 }
